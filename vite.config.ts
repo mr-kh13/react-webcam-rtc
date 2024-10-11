@@ -12,16 +12,18 @@ export default defineConfig({
       fileName: (format) => `react-webcam-rtc.${format}.js`,
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom', 'jotai'],
       output: {
         globals: {
           react: 'React',
+          'react-dom': 'react-dom',
+          jotai: 'jotai',
         },
       },
     },
   },
   plugins: [
     react(),
-    dts({ rollupTypes: true, tsconfigPath: './tsconfig.build.json' }),
+    dts({ tsconfigPath: './tsconfig.build.json', rollupTypes: true }),
   ],
 });
