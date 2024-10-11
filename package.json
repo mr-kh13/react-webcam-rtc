@@ -1,7 +1,7 @@
 {
   "name": "react-webcam-rtc",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,15 +10,16 @@
     "preview": "vite preview",
     "test": "vitest run",
     "watch": "vitest",
-    "format": "prettier --write ./src"
+    "format": "prettier --write ./src",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
+    "jotai": "^2.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
-    "@reduxjs/toolkit": "^2.2.8",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.0.1",
     "@types/node": "^22.7.4",
@@ -36,16 +37,19 @@
     "globals": "^15.9.0",
     "jsdom": "^25.0.1",
     "prettier": "^3.3.3",
-    "react-redux": "^9.1.2",
     "react-test-renderer": "^18.3.1",
-    "redux": "^5.0.1",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.2.3",
     "vitest": "^2.1.1"
   },
+  "files": [
+    "dist"
+  ],
   "main": "./dist/react-webcam-rtc.umd.js",
   "module": "./dist/react-webcam-rtc.es.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/react-webcam-rtc.es.js",

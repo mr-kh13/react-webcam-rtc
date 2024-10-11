@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/reactwebcamrtc.tsx","./src/components/index.ts"],"version":"5.6.2"}
+{"root":["./src/app.tsx","./src/demo.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/lib/codec.ts","./src/lib/devices.ts","./src/lib/main.ts","./src/lib/store.ts","./src/lib/stream.ts","./src/lib/types.ts","./src/lib/usecamera.ts","./src/lib/userecordwebcam.ts","./src/lib/userecorder.ts","./src/lib/utils.ts"],"version":"5.6.2"}
